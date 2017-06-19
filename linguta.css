@@ -1,0 +1,264 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+#mapinfo{
+	border:1px black solid;
+	padding:5px;
+	font-size: 14px;
+}
+.clear{
+	clear: both;
+}
+
+
+.wrap{
+	width: 100%;
+	margin: 0 auto;
+	font-family: 微軟正黑體;
+}
+.top{
+	width: 100%;
+	height: 13%;
+	float: left;
+}
+.top h1{
+	color: #6E6E6E;
+	font-weight: bold;
+	font-size: 220%;
+	margin-top: 3%;
+	margin-left: 5%;
+}
+.bar{
+	float: right;
+	position: relative;
+	padding: 10px 20px;
+}
+.bar form{
+	display: inline;
+}
+.bar select{
+	margin-left: 10px;
+}
+.bar #area{
+	width: 80px;
+	height: 30px;
+	border-radius: 5px;
+}
+.bar #identity{
+	width: 80px;
+	height: 30px;
+	border-radius: 5px;
+}
+.bar #type{
+	width: 80px;
+	height: 30px;
+	border-radius: 5px;
+}
+.bar #cost{
+	width: 80px;
+	height: 30px;
+	border-radius: 5px;
+}
+.bar .select_btn{
+	width: 50px;
+	height: 30px;
+	border-radius: 5px;
+	border: none;
+	margin-left: 20px;
+}
+.bottom{
+	height: 87%;
+}
+#information{
+	float: left;
+  	height: 87%;
+  	width: 20%;
+  	background: #8C8CFF;
+}
+#information h2{
+	color: white;
+	padding: 10%;
+	font-size: 130%;
+	font-weight: bold;
+}
+#lingu_data li{
+	padding: 3% 5% 3% 5%;
+	line-height: 150%;
+	background: white;
+	border-bottom: #CFCFCF 1px solid ;
+}
+#map {
+	float: left;
+  	height: 87%;
+  	width: 80%;
+}
+@media(max-width: 1080px){
+	#information{
+	  	width: 25%;
+	}
+	#information h2{
+		font-size: 120%;
+	}
+	#lingu_data li{
+		font-size: 95%
+	}
+	#map {
+	  	width: 75%;
+	}
+}
+@media(max-width: 768px){
+	.top{
+		height: 12%;
+	}
+	.top h1{
+		font-size: 200%;
+		margin-top: 5%;
+		margin-left: 5%;
+	}
+	#information{
+	  	width: 30%;
+	}
+	#information h2{
+		padding: 10%;
+		font-size: 115%;
+	}
+	#lingu_data li{
+		line-height: 130%;
+		font-size: 90%
+	}
+	#map {
+	  	width: 70%;
+	}
+}
+@media(max-width: 414px){
+	.top{
+		height: 8%;
+	}
+	.top h1{
+		font-size: 180%;
+		margin-top: 5%;
+		margin-left: 5%;
+		text-align: center;
+	}
+	.bar select{
+		margin: 0 auto;
+		margin-bottom: 1%;
+	}
+	.bar #area{
+		width: 47%;
+		margin-right: 3%;
+	}
+	.bar #identity{
+		width: 47%;
+	}
+	.bar #type{
+		width: 47%;
+		margin-right: 3%;
+	}
+	.bar #cost{
+		width: 47%;
+	}
+	.bar .select_btn{
+		width: 97%;
+		margin: 2% 0 1% 0;
+	}
+	#information{
+	  	width: 100%;
+	  	height: 80%;
+	}
+	#information h2{
+		font-size: 130%;
+		padding: 6% 6%;
+		text-align: center;
+	}
+	#map {
+	  	width: 100%;
+	  	height: 80%;
+	}
+}
+@media(max-width: 320px){
+	.top{
+		height: 5%;
+	}
+	.top h1{
+		margin-top: 5%;
+		font-size: 135%;
+	}	
+	.bar{
+		padding: 5% 5%;
+	}
+	.bar select{
+		margin: 1% auto;
+	}
+	.bar #area{
+		width: 45%;
+		margin-right: 5%;
+	}
+	.bar #identity{
+		width: 45%;
+	}
+	.bar #type{
+		width: 45%;
+		margin-right: 5%;
+	}
+	.bar #cost{
+		width: 45%;
+		margin-bottom: 4%; 
+	}
+	.bar .select_btn{
+		width: 95%;
+		margin: 0 auto;
+	}
+	#information{
+	  	height: 50%;
+	}
+	#information h2{
+		font-size: 110%;
+		padding: 6% 10%;
+		text-align: center;
+	}
+	#map {
+	  	height: 50%;
+	}
+}

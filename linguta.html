@@ -1,0 +1,68 @@
+<html lang="en">
+<link rel="stylesheet" href="linguta.css">
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQy7I0hPVWW8u7JOL1MRhxglY2L_s1dvM&callback=initMap"
+    async defer></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+<script src="linguta.js"></script>
+<head>
+	<meta charset="UTF-8">
+	<title>高雄市靈骨塔位查詢</title>
+</head>
+<body>
+	<div class="wrap">
+		<div class="top">
+			<h1>高雄市靈骨塔位查詢</h1>
+			<ul id='list'></ul>
+		</div>
+		<div class="clear"></div>
+		<div class="bottom">
+			<div class="bar">
+		        <select id="area">
+		            <option value="" disabled selected>所在地區</option>
+		            <option value="旗津區">旗津區</option>
+		            <option value="大寮區">大寮區</option>
+		            <option value="三民區">三民區</option>
+		            <option value="大樹區">大樹區</option>
+		            <option value="仁武區">仁武區</option>
+		            <option value="大社區">大社區</option>
+		        </select>
+		        <select id="identity">
+		            <option value="" disabled selected>申請類別</option>
+		            <option value="市民">市民</option>
+		            <option value="里民">里民</option>
+		            <option value="區民">區民</option>
+		        </select>
+		        <select name="type" id="type">
+		            <option value="" disabled selected>塔位款式</option>
+		            <option value="神主牌位">神主牌位</option>
+		            <option value="骨灰櫃">骨灰櫃</option>
+		            <option value="骨骸櫃">骨骸櫃</option>
+		            <option value="雙人式骨灰櫃">雙人式骨灰櫃</option>
+		        </select>
+		        <select name="cost" id="cost">
+		            <option value="" disabled selected>價格範圍</option>
+		            <option value="9,999">9,999(含)以下</option>
+		            <option value="19,999">19,999(含)以下</option>
+		            <option value="29,999">29,999(含)以下</option>
+		            <option value="39,999">39,999(含)以下</option>
+		            <option value="49,999">49,999(含)以下</option>
+		            <option value="59,999">59,999(含)以下</option>
+		            <option value="69,999">69,999(含)以下</option>
+		            <option value="79,999">79,999(含)以下</option>
+		            <option value="89,999">89,999(含)以下</option>
+		            <option value="99,999">99,999(含)以下</option>
+		            <option value="999,999">100,000(含)以上</option>
+		        </select>
+		        <input class="select_btn" type="submit" onclick="test()">
+			</div>
+			<div class="clear"></div>
+			<div id="map"></div>
+			<div id=information>
+				<h2>想找甚麼樣的塔位呢?</h2>
+				<ul id="lingu_data"></ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
